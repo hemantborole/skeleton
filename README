@@ -1,0 +1,19 @@
+I have written some shell scripts and found that creating a template can be handy. So I created this template. So most of the time I start with this template. This template provides
+
+ * basic flags that most shell script use. [see usage below]
+ * getopts structure is in place
+ * A default logger
+ * Almost ready to use usage function.
+
+Below is what you see if you run this script as is. Now you can only concentrate on your main function to do what you need to do.
+
+  usage: $myname [options]
+
+  -h           optional  Print this help message
+  -q           optional  Suppress log messages on screen, just log them.
+  -f           optional  Force
+  -i <file>    required  input file
+  -l <log>     optional  print errors and output to this file.
+               default ${myname}.log
+  -o <outdir>  optional  store output here.
+               default is <put ur default here>"
