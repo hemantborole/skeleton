@@ -41,7 +41,7 @@ do
   l) logger="$OPTARG" ;;
   i) infile="$OPTARG" ;;
   o) outdir="$OPTARG" ;;
-  :) logit "The argument -$args requires a parameter" ;;
+  :) logit "The argument -$OPTARG requires a parameter" ;;
   *) usage ;;
   esac
 done
